@@ -21,7 +21,7 @@ import 'url_path_strategy.dart';
 ///
 /// Create one of these to initialize your app's routing policy.
 // ignore: prefer_mixin
-class GoRouter extends ChangeNotifier with NavigatorObserver {
+class GoRouter extends NavigatorObserver with ChangeNotifier {
   /// Default constructor to configure a GoRouter with a routes builder
   /// and an error page builder.
   GoRouter({

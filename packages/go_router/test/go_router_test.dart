@@ -2010,12 +2010,6 @@ class DummyBuildContext implements BuildContext {
   bool get debugDoingBuild => throw UnimplementedError();
 
   @override
-  InheritedWidget dependOnInheritedElement(InheritedElement ancestor,
-      {Object aspect = 1}) {
-    throw UnimplementedError();
-  }
-
-  @override
   T? dependOnInheritedWidgetOfExactType<T extends InheritedWidget>(
       {Object? aspect}) {
     throw UnimplementedError();
@@ -2096,6 +2090,20 @@ class DummyBuildContext implements BuildContext {
 
   @override
   Widget get widget => throw UnimplementedError();
+
+  @override
+  T? getInheritedWidgetOfExactType<T extends InheritedWidget>() {
+    throw UnimplementedError();
+  }
+
+  @override
+  bool get mounted => throw UnimplementedError();
+
+  @override
+  InheritedWidget dependOnInheritedElement(InheritedElement ancestor,
+      {Object? aspect}) {
+    throw UnimplementedError();
+  }
 }
 
 class DummyStatefulWidget extends StatefulWidget {
